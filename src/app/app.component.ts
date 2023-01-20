@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My Angular App';
+  image:string = "./pic.jpg";
+  isValid:boolean = false;
+
+  onClickMe($event: any){
+    console.log("clicked", $event);
+  }
 }

@@ -1,3 +1,13 @@
 
 <h1>{{ title }} </h1>
 <app-products></app-products>
+
+<img src="{{ image }} " alt="gren in a jacket" style="width:500px;height:600px;">
+<p></p>
+<button class="btn btn-primary">Submit</button>
+<p></p>
+<button class="btn btn-primary" [class.disabled]="!isValid">Submit</button>
+<button (click)="onClickMe($event)">Submit2</button>
+<p></p>
+<app-rating></app-rating>
+
